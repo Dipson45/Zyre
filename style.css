@@ -1,0 +1,295 @@
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #a0a0a0;
+  transition: 1s;
+
+}
+
+.nab {
+  font-weight: bold;
+  background-color: black
+}
+
+
+nav {
+  justify-content: space-around;
+  display: flex;
+  padding-bottom: 50px;
+  margin-left: 500px;
+  margin-top: -50px;
+}
+
+a:hover {
+  color: white;
+}
+
+
+
+
+.img1 {
+  background-color: black;
+  margin-left: 900px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+
+}
+
+
+.button {
+  margin-top: 400px;
+  margin-left: 200px;
+  background-color: black;
+  width: 250px;
+  padding: 40px;
+  font-size: 30px;
+  color: #15f4ee;
+  font-family: poppins;
+  font-weight: 400;
+  border: 5px solid #15f4ee;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 1.5s;
+  position: absolute;
+
+}
+
+.button1 {
+  display: none;
+  margin-top: 400px;
+  margin-left: 200px;
+  background-color: black;
+  width: 250px;
+  padding: 40px;
+  font-size: 30px;
+  color: #15f4ee;
+  font-family: poppins;
+  font-weight: 400;
+  border: 5px solid #15f4ee;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 1.5s;
+
+}
+
+.button:hover {
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+    0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  text-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+
+}
+
+
+.image {
+  position: relative;
+}
+
+.t1 {
+  margin-left: 400px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.419);
+  color: black;
+  border: 1px solid rgb(0, 0, 0);
+  width: 700px;
+  border-radius: 10px;
+  padding-bottom: 50px;
+  top: 10px;
+  left: -500%;
+  transition: 1s;
+
+}
+
+#click {
+  display: none;
+}
+
+
+.order {
+  color: grey;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.order:hover {
+  color: white
+}
+
+#click:checked~.t1 {
+  left: 0;
+}
+
+#click:checked~.image1 {
+  filter: blur(10px);
+}
+
+
+
+/* Responsive */
+
+#click2 {
+  display: none;
+}
+
+.img5 {
+  display: none;
+  cursor: pointer;
+}
+
+.ul1 {
+  position: relative;
+  right: 105%;
+  padding-top: 100px;
+  padding-bottom: 160px;
+  background-color: black;
+  transition: 1s;
+  border-radius: 50px;
+}
+
+
+
+
+
+li {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+
+
+#click2:checked~.button1 {
+  display: none;
+}
+
+.img4 {
+  display: none;
+  transition: 1s;
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+  .img4 {
+    display: block;
+  }
+
+
+
+  nav {
+    display: none;
+  }
+
+  .button1 {
+    display: none;
+    margin: auto;
+    margin-top: 0;
+
+
+  }
+
+  button {
+    display: none;
+  }
+
+
+  .img5 {
+    display: block;
+    width: 50px;
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    bottom: auto;
+  }
+
+  .image1 {
+    display: none;
+  }
+
+
+
+}
+
+
+
+
+#click2:checked~.ul1 {
+  display: block;
+  right: 0;
+}
+
+#click2:checked~.img4 {
+  width: 0;
+  height: 0;
+  /*opacity: 0;*/
+  background-color: white;
+
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1025px) {
+
+  .button {
+    margin-left: 110px;
+    margin-top: 250px;
+  }
+
+  .t1 {
+    padding-bottom: 500px;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1281px) {
+
+  .button {
+    margin-left: 150px;
+    margin-top: 310px;
+  }
+
+}
+
+/*Table For phone*/
+.t2 {
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  margin-top: 20px;
+}
+
+.input {
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: black;
+  padding: 5px;
+  outline: none;
+}
+
+.input1 {
+  background: black;
+  color: white;
+  border-color: white;
+
+}
+
+.input2 {
+  border-radius: 7px;
+  padding: 5px;
+  border-color: rgba(0, 0, 0, 0.427);
+}
